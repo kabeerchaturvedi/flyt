@@ -1,0 +1,14 @@
+.body{
+    display: flex;
+}
+.coloredDiv{
+    background-color: darkkhaki;
+    height:200px;
+    width:200px;
+    position:fixed;
+}
+.highlight{ 
+    background-color: green;
+    height:200px;
+    width:200px;
+    position:fixed; }

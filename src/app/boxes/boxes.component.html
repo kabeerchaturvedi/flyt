@@ -1,0 +1,14 @@
+<div >
+    <button (click)="createBoxes($event)">Create Boxes</button>
+    <input type=text >
+
+    <h5 Iteration of values></h5>
+    <div *ngFor="let box of boxes ;index as i;" (click)="setDiv(i)" >
+      
+        <div [id]="box.id" [ngStyle]="{'z-index':i,'left':box.x+'px','top':box.y+'px' }" [ngClass]="{'highlight': selectedIndex === i,'coloredDiv': selectedIndex !== i}"  (keypress)="eventHandler($event)">
+            {{box.id}}
+        </div>
+    
+</div>
+
+</div>
